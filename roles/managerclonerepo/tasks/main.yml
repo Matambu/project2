@@ -1,0 +1,6 @@
+---
+# tasks file for managerclonerepo
+- name: Clone git repo
+  git:
+    repo: https://github.com/Matambu/project1.git
+    dest: /home/marti/project1
