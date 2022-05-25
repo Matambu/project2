@@ -18,6 +18,10 @@ For this project I should have:
 - Orchestration Tool: Docker Swarm
 - Reverse Proxy: NGINX
 
+
+#Trello
+[trello]https://trello.com/b/0nB9XhfI/project
+
 # Initial Ideas
 I have decided to make a random Star Wars databank entry application. The app should:
 

@@ -26,8 +26,8 @@ I have decided to make a random Star Wars databank entry application. The app sh
 -Use service4 to generate a databank entry 
 
 # Design
-![app1](./project2/Documentation/app1.png)
-![app2](./project2/Documentation/app2.png)
+![app1](./Documentation/app1.png)
+![app2](./Documentation/app2.png)
 
 # Summary
 Once the app was made , I added a Dockerfile into each of the service folders to containerize them and made a docker-compose.yaml, I then made ansible related files (Inventory, playbook.yaml and roles/tasks) these help install docker on the (soon-to-be) swarm nodes and then sets up a swarm. I made a Jenkinsfile with scripts so that jenkins can use that to make a pipeline.
@@ -68,6 +68,7 @@ I make Dockerfiles in each service in order to build images of them, exposing th
 
 
 # Docker Swarm
+
 ![swarm](./Documentation/swarm.png)
 
 I ssh into my swarm manager using StrictHostKeyChecking=no and pull the latest images for my services and clone and move into a directory, I then docker stack deploy accross the swarm using the docker-compose.yaml and giving my stack the name starstack.
@@ -88,4 +89,6 @@ I made a separate vm for NGINX.
 
 # Future Improvements
 I had multiple errors throughout this project, ranging from Ansible to Jenkins Pipeline. I struggled with Time Management and Procrastination. I hope to use this experience to help me improve my project management skills for the future.
+
+
 
