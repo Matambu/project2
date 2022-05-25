@@ -81,7 +81,7 @@ I made a separate vm for NGINX.
 ![userjourney](./Documentation/userjourney.png)
 
 # Software Used
-![SoftwareUsed](./Documentation/SoftwareUsed.png)
+![SoftwareUsed](./Documentation/SoftwareUsed.jpg)
 
 # Feature Branch
 ![featurebranch](./Documentation/featurebranch.png)
