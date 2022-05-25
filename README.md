@@ -25,6 +25,12 @@ I have decided to make a random Star Wars databank entry application. The app sh
 -Use service2 and service3 to generate a random name and planet, with service2 being the name part and service3 being the planet part.
 -Use service4 to generate a databank entry 
 
+# Presentation
+[Link to vid presentation](https://drive.google.com/drive/folders/1B0W-VSubipgiq1qYSxbfilK1lNcPvT9_?usp=sharing)
+
+# Kanban Board
+[Link to Kanban Board](https://trello.com/b/0nB9XhfI/project)
+
 # Design
 ![app1](./Documentation/app1.png)
 ![app2](./Documentation/app2.png)
