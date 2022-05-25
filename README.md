@@ -86,7 +86,7 @@ I made a separate vm for NGINX.
 # User Journey
 ![userjourney](./Documentation/userjourney.png)
 
-# Software Used
+# CI Pipeline
 ![SoftwareUsed](./Documentation/SoftwareUsed.jpg)
 
 # Feature Branch
