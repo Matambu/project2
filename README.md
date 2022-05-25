@@ -82,6 +82,8 @@ I made a separate vm for NGINX.
 # Software Used
 ![SoftwareUsed](./Documentation/SoftwareUsed.png)
 
+# Feature Branch
+![featurebranch](./Documentation/featurebranch.png)
 
 
 # Future Improvements
