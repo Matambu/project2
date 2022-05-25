@@ -27,7 +27,7 @@ I have decided to make a random Star Wars databank entry application. The app sh
 
 # Design
 ![app1](./Documentation/app1.png)
-![app2](./project2/Documentation/app2.png)
+![app2](./Documentation/app2.png)
 
 # Summary
 Once the app was made , I added a Dockerfile into each of the service folders to containerize them and made a docker-compose.yaml, I then made ansible related files (Inventory, playbook.yaml and roles/tasks) these help install docker on the (soon-to-be) swarm nodes and then sets up a swarm. I made a Jenkinsfile with scripts so that jenkins can use that to make a pipeline.
@@ -50,10 +50,10 @@ On my jenkins machine I had to install Jenkinsand  use sudo visudo in my VM to m
 In order to make a Jenkins pipeline I need to have a Jenkinsfile for jenkins to read, the pipeline has a number of benefits the main for me is the easily digestible progress tracker, where you can see what stage your build fails at. The Jenkinsfile defines stages and we give it steps for each stage, I choose to execute scripts in my steps as it is easy to impliment. 
 
 # Testing 
-![test1](./project2/Documentation/test1.png)
-![test2](./project2/Documentation/test2.png)
-![test3](./project2/Documentation/test3.png)
-![test4](./project2/Documentation/test4.png)
+![test1](./Documentation/test1.png)
+![test2](./Documentation/test2.png)
+![test3](./Documentation/test3.png)
+![test4](./Documentation/test4.png)
 The first stage is testing where I pytest each service using pytest --cov ./application after making a venv and installing pytest.
 
 
@@ -62,26 +62,26 @@ The second stage is ansible, which is used to automate the connectivity of a man
 I then need to make a playbook.yaml file and define which hosts (defined in the inventory) will have what roles, i then of course need to make roles directory, and create the directories with the same name as the roles defined in the playbook.yaml. In each of the roles I add a new directory called tasks and in each of the respective task directories I make a main.yaml, making sure the .yaml is the same as the playbooks. In the main.yaml I specify the tasks for any node who is assigned to do, for example, my docker role gets both nodes to install docker and perform the nessesary actions, the master role tells my manager node to set up a docker swarm and export the token, and the worker role tells my worker to join the swarm with the token.
 
 # Docker
-![dockerhub](./project2/Documentation/dockerhub.png)
+![dockerhub](./Documentation/dockerhub.png)
 I make Dockerfiles in each service in order to build images of them, exposing the ports of each service respectivly. I then make a docker-compose.yaml which is a config file which helps build all of the containers at once and deploys them as a service. In my script for the jenkins Pipeline I login to docker (having previously done so), stop and remove any previously running images, build my new images and push them to DockerHub.
 
 
 # Docker Swarm
 
-![swarm](/project2/Documentation/swarm.png)
+![swarm](./Documentation/swarm.png)
 
 
 I ssh into my swarm manager using StrictHostKeyChecking=no and pull the latest images for my services and clone and move into a directory, I then docker stack deploy accross the swarm using the docker-compose.yaml and giving my stack the name randprize.
 # NGINX
-![nginx](./project2/Documentation/nginx.png)
+![nginx](./Documentation/nginx.png)
 
 I made a separate vm for NGINX.
 
 # User Journey
-![userjourney](./project2/Documentation/userjourney.png)
+![userjourney](./Documentation/userjourney.png)
 
 # Software Used
-![SoftwareUsed](./project2/Documentation/SoftwareUsed.png)
+![SoftwareUsed](./Documentation/SoftwareUsed.png)
 
 
 
