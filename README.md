@@ -26,7 +26,7 @@ I have decided to make a random Star Wars databank entry application. The app sh
 -Use service4 to generate a databank entry 
 
 # Design
-![app1](./project2/Documentation/app1.png)
+![app1](./Documentation/app1.png)
 ![app2](./project2/Documentation/app2.png)
 
 # Summary
