@@ -67,7 +67,9 @@ I make Dockerfiles in each service in order to build images of them, exposing th
 
 
 # Docker Swarm
-![swarm](./project2/Documentation/swarm.png)
+
+![swarm](/project2/Documentation/swarm.png)
+
 
 I ssh into my swarm manager using StrictHostKeyChecking=no and pull the latest images for my services and clone and move into a directory, I then docker stack deploy accross the swarm using the docker-compose.yaml and giving my stack the name randprize.
 # NGINX
@@ -85,4 +87,6 @@ I made a separate vm for NGINX.
 
 # Future Improvements
 I had multiple errors throughout this project, ranging from Ansible to Jenkins Pipeline. I struggled with Time Management and Procrastination. I hope to fill those gaps in and submit a finished article that I can be proud of and use to advertise myself for job oppurtunities.
+
+
 
