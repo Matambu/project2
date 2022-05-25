@@ -96,5 +96,7 @@ I made a separate vm for NGINX.
 # Future Improvements
 I had multiple errors throughout this project, ranging from Ansible to Jenkins Pipeline. I struggled with Time Management and Procrastination. I hope to use this experience to help me improve my project management skills for the future.
 
+# License
+LICENSE.md
 
 
